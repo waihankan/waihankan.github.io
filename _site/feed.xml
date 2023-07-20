@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/blogs/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blogs/" rel="alternate" type="text/html" /><updated>2023-07-19T21:43:47-07:00</updated><id>http://localhost:4000/blogs/feed.xml</id><title type="html">Arbitrary Topics</title><subtitle>Craft my poorly researched thoughts into a blog. Probably no one else will ever read it, but oh well.</subtitle><entry><title type="html">How You Will Go Broke with 2D-Lottery</title><link href="http://localhost:4000/blogs/jekyll/update/2021/07/17/How-you-will-go-broke-with-2D-lottery.html" rel="alternate" type="text/html" title="How You Will Go Broke with 2D-Lottery" /><published>2021-07-17T22:07:07-07:00</published><updated>2021-07-17T22:07:07-07:00</updated><id>http://localhost:4000/blogs/jekyll/update/2021/07/17/How-you-will-go-broke-with-2D-lottery</id><content type="html" xml:base="http://localhost:4000/blogs/jekyll/update/2021/07/17/How-you-will-go-broke-with-2D-lottery.html"><![CDATA[<p>Several weeks ago, <a href="https://en.wikipedia.org/wiki/Thai_lottery#Demographics">2D Lottery</a> was increasingly trending on my Facebook newsfeed. While some people were mourning because of losing, others were being <strong>House</strong> themselves. And of course, there would also be a couple of people who won the lottery because the chances of winning are really high: 1 in 100. Incidentally, one of my friends in my Facebook account is a <strong>House</strong> and posted about rules and regulations. Here is the simple rule:</p>
+
+<blockquote>
+  <font size="4">If you win the lottery, you will get 80x of what you had paid.</font>
+</blockquote>
+
+<p>This rule stuck out to me, and I thought a lot about this. I asked one of my friends to give it a try; he said <em>“Yes”</em>, and sent me 10 random numbers. I reversed all of his numbers - a total of 20 numbers - and gave it a chance. In retrospect, I reckon this was <strong>really stupid</strong>, and I will explain why in the following paragraphs.</p>
+
+<hr />
+<p><br /></p>
+<h3 id="superstitions">Superstitions</h3>
+<p>Most people pick numbers from dreams, news, events or oddities they observe: the number of bananas on a stalk or the appearance of a two-headed fish, cats with strange markings, the pattern a snake leaves in the dirt, bla bla..</p>
+
+<blockquote>
+  <p>Various websites and soothsayers help interpret these events, with rats viewed as a one, water a two, snakes a five (large) or six (small), and anything related to royalty a nine. Many Thais (<em>including Myanmar</em>) believe that calamity can beget good fortune, and that tragedy may give rise to powerful ghosts who offer guidance on winning numbers. - Wikipedia</p>
+</blockquote>
+
+<p>In fact, this kind of information increases the odd of the <strong>House</strong> winning. Since the lottery numbers are <a href="https://en.wikipedia.org/wiki/Independence_(probability_theory)">stastically independent</a>. A lot of people try to figure out some form of a pattern in lottery ticket. In reality, there is no absolute pattern to it and winning always happen to be <strong>random</strong>.</p>
+
+<p>Let’s talk about <em>the fortune tellers</em>; aka <em>the number givers</em>. From my poor research, they usually announce 16 numbers everyday. Let’s think about this properly. The probability of he/she getting the right number is already <img src="https://latex.codecogs.com/gif.latex?%5Cfn_cm%20%5Cfrac%7B16%7D%7B100%7D" alt="" />. Instead of following his numbers, you can also choose some random 16 numbers, which would lead to the same probability of winning.</p>
+
+<hr />
+<p><br /></p>
+<h3 id="probability-and-gambling-mathematics">Probability and Gambling Mathematics</h3>
+<p>Here is an example to demonstrate the maths behind the 2D lottery. Let’s say you play the game with 100 MMK. The probability of winning 80x is 0.01; and the probability of lossing 100 is 0.99. To calculate the <a href="https://en.wikipedia.org/wiki/Expected_value">expected value</a>:</p>
+
+<p><strong>Expected Value</strong> = <img src="https://latex.codecogs.com/gif.latex?%5Cfn_jvn%20%5Csmall%208000%20*%5Cfrac%7B1%7D%7B100%7D%20-%20100*%5Cfrac%7B99%7D%7B100%7D" alt="" /> = <strong>- 19</strong> MMK</p>
+
+<p>Here, you might say “Well, this is just the expected value. How can I know that my bet will exactly turn out to be like this? I could be so <em>lucky</em> and the luck turns into a <em>winning streak</em>.”</p>
+
+<p>However, according to <a href="https://en.wikipedia.org/wiki/Law_of_large_numbers">Law Of Large Numbers</a>:</p>
+
+<blockquote>
+  <p>The average of the results obtained from a large number of trials should be close to the expected value and will tend to become closer to the expected value as more trials are performed.</p>
+</blockquote>
+
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Lawoflargenumbers.svg/600px-Lawoflargenumbers.svg.png" alt="" /></p>
+
+<p>To make it easier to understand:</p>
+<blockquote>
+  <p>When tossing a fair coin for 5 times, it is feasible to get a 5 head or 5 tail straight. But, when it comes to 1000 times, it is almost impossible to get a 1000 head or 1000 tail straight.</p>
+</blockquote>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>Simulation of a coin that is red on one side and blue on the other side</strong></td>
+      <td><img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Lawoflargenumbersanimation2.gif" alt="" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+<p><br /></p>
+
+<p>Besides, let’s calculate the <strong>House Edge</strong>, which is the average tendency of the House “<strong>Winning</strong>” or You “<strong>Loosing</strong>”. Using Expected Value (19 MMK) from the previous calculation:</p>
+
+<p><strong>House Edge</strong> =  <img src="https://latex.codecogs.com/gif.latex?%5Cfn_jvn%20%5Csmall%20%5Cfrac%7BExpectedValue%7D%7BAmountSpentByGambler%7D%20*%20100%25" alt="" />  =  <img src="https://latex.codecogs.com/gif.latex?%5Cfn_jvn%20%5Csmall%20%5Cfrac%7B19%7D%7B100%7D%20*%20100%25" alt="" /> —&gt; <strong>19%</strong></p>
+
+<p><em>House Edge of 19% is ridiculous!!!</em>; that’s why in the beginning of this blog, I said it’s a stupid bet.</p>
+
+<p>To explain it briefly, if you bet <em>2000 MMK</em> everyday for a month (30-days), you will be losing approximately <em>11400 MMK</em> every month! For a year? It will be <em>136800 MMK</em>! Of course, this value is not accurate enough since the number of trials is fairly small and billions away from approaching infinity.</p>
+
+<p><em>My opinion here is if you win big accidentally, just quit and leave the game</em>.</p>
+
+<hr />
+<p><br /></p>
+
+<p>If you still believing that 2D lottery is a cash cow, you must take a look at other types of casino games and their house advantage</p>
+
+<ul>
+  <li><a href="https://en.wikipedia.org/wiki/Blackjack">Blackjack</a> - 1.5%</li>
+  <li><a href="https://en.wikipedia.org/wiki/Craps">Craps</a> - 1.4% - 5%</li>
+  <li><a href="https://en.wikipedia.org/wiki/Baccarat_(card_game)">Baccarat</a> - 1.5%</li>
+  <li><a href="https://en.wikipedia.org/wiki/Roulette">Roulette</a> - 5.26%</li>
+</ul>
+
+<p>PS. I am just speculating here, and I’m not fond of gambling.. Furthermore, <a href="https://www.cleveland.com/business/2016/01/why_do_70_percent_of_lottery_w.html">about 70% of lottery winners end up bunkrupt</a>. But this makes my point. Don’t bet on something with big house edge value. Or, you would end up going flat broke! At the end of the day, it’s just a form of <strong>entertainment</strong>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Several weeks ago, 2D Lottery was increasingly trending on my Facebook newsfeed. While some people were mourning because of losing, others were being House themselves. And of course, there would also be a couple of people who won the lottery because the chances of winning are really high: 1 in 100. Incidentally, one of my friends in my Facebook account is a House and posted about rules and regulations. Here is the simple rule:]]></summary></entry></feed>
